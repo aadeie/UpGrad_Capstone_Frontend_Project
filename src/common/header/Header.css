@@ -1,0 +1,29 @@
+.header {
+    background-color: purple;
+    height: 70px;
+    padding: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-color: #ff7f7f;
+    height: 35px;
+}
+
+.app-title {
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.button-section {
+    margin-right: 10px;
+}
