@@ -1,78 +1,294 @@
-# Getting Started with Create React App
+# Doctor Finder Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based Doctor Finder application developed as part of the UpGrad Frontend Capstone Project. The application enables users to browse doctors, filter by specialty, view doctor details, book appointments, manage appointments, and submit ratings and reviews.
 
+---
 
-## Project Setup steps
+## Project Overview
 
-1. Install Nodejs 10<
-2. Checkout repo
-3. Traverse into code repo and execute `node i` to install packages
-4. To start the application `npm start`
- 
-## Available Scripts
+Doctor Finder is a healthcare appointment booking platform that allows patients to:
 
-In the project directory, you can run:
+- Browse available doctors
+- Filter doctors by specialty
+- View detailed doctor information
+- Register and log in securely
+- Book appointments with doctors
+- View appointment history
+- Rate completed appointments
+- View doctor ratings
 
-### `npm start`
+The application is built using React and Material-UI and communicates with a RESTful backend API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Authentication
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- User Registration
+- User Login
+- Session Management
+- Form Validation
 
-### `npm run build`
+### Doctor Management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- View all doctors
+- Filter doctors by specialty
+- View doctor details
+- View doctor ratings
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Appointment Management
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Book appointments
+- View appointment history
+- View appointments only when logged in
 
-### `npm run eject`
+### Rating System
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Submit ratings for completed appointments
+- Add comments and feedback
+- View updated doctor ratings
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technology Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Frontend
 
-## Learn More
+- React.js
+- JavaScript (ES6+)
+- Material UI
+- React Router
+- Axios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Development Tools
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Visual Studio Code
+- Git
+- GitHub
+- Node.js
+- npm
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Structure
 
-### Analyzing the Bundle Size
+```text
+src
+├── assets
+├── common
+├── screens
+│   ├── appointment
+│   ├── doctorDetails
+│   ├── home
+│   └── login
+├── util
+├── App.js
+├── index.js
+└── index.css
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Installation and Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Clone Repository
 
-### Advanced Configuration
+```bash
+git clone https://github.com/aadeie/UpGrad_Capstone_Frontend_Project.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
 
-### Deployment
+### Navigate to Project Folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+cd UpGrad_Capstone_Frontend_Project
+```
 
-### `npm run build` fails to minify
+### Install Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+```
+
+### Start Application
+
+```bash
+npm start
+```
+
+Application will run at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## Backend Configuration
+
+Ensure the backend service is running before starting the frontend.
+
+Default backend URL:
+
+```text
+http://localhost:8080
+```
+
+---
+
+# Application Screenshots
+
+## Home Page (Logged Out)
+
+![Header Before Login](Screenshots/Header_before.png)
+
+---
+
+## Home Page (Logged In)
+
+![Header After Login](Screenshots/Header_After.png)
+
+---
+
+## Login Validation
+
+![Login Validation](Screenshots/Login_Error.png)
+
+---
+
+## Registration Validation
+
+![Registration Validation](Screenshots/Register_Error.png)
+
+---
+
+## Doctor Listing
+
+![Doctor Listing](Screenshots/Doctor_Tab_1.png)
+
+---
+
+## Specialty Filter
+
+![Specialty Filter](Screenshots/Doctor_Tab_2.png)
+
+---
+
+## Doctor Details
+
+![Doctor Details](Screenshots/Doctor_Details.png)
+
+---
+
+## Book Appointment
+
+![Book Appointment](Screenshots/Book_Appointment.png)
+
+---
+
+## Appointment Tab (Logged Out)
+
+![Appointment Before Login](Screenshots/Appointment_Before.png)
+
+---
+
+## Appointment Tab (Logged In)
+
+![Appointment After Login](Screenshots/Appointment_After.png)
+
+---
+
+## Appointment Overview
+
+![Appointment Overview](Screenshots/Appointment_Overview.png)
+
+---
+
+## Rate Appointment
+
+![Rate Appointment](Screenshots/Rate_Appointment.png)
+
+---
+
+## Appointment Rated Successfully
+
+![Appointment Rated](Screenshots/Appointment_Rated.png)
+
+---
+
+## Ratings Overview
+
+![Ratings Overview](Screenshots/Rating_Overview.png)
+
+---
+
+## Key Functionalities Implemented
+
+### User Features
+
+- User Registration
+- User Login
+- Authentication Validation
+- Logout Functionality
+
+### Doctor Features
+
+- View Doctors
+- Filter by Specialty
+- Doctor Details Modal
+- Doctor Rating Display
+
+### Appointment Features
+
+- Appointment Booking
+- Appointment History
+- Protected Appointment View
+
+### Rating Features
+
+- Rate Appointments
+- Submit Reviews
+- View Updated Ratings
+
+---
+
+## Future Enhancements
+
+- JWT Authentication
+- User Profile Management
+- Appointment Cancellation
+- Doctor Search
+- Pagination
+- Responsive Mobile Design
+- Notifications and Reminders
+
+---
+
+## Learning Outcomes
+
+Through this project I gained hands-on experience with:
+
+- React Components
+- State Management
+- React Hooks
+- React Router
+- REST API Integration
+- Material UI
+- Form Validation
+- Frontend Architecture
+- Git and GitHub Workflow
+
+---
+
+## Author
+
+**Aditya Sharma**
+
+UpGrad Frontend Capstone Project
+
+GitHub Repository:
+
+https://github.com/aadeie/UpGrad_Capstone_Frontend_Project
+
+---
